@@ -1,11 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import html2canvas from "html2canvas";
-// import headerBg from '/assets/header_bg.png'
-// import slide from '/assets/slide.jpg'
-// import logo from '/assets/logo.png'
-// import logo3 from '/assets/logo3.png'
-import Image from "next/image";
+
 const App = () => {
   const [password, setPassword] = useState("");
   const [baladyPrice, setBaladyPrice] = useState();
@@ -75,21 +71,21 @@ const App = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <img src={"/header_bg.png"} width="900" height="100" />
+            <img src={"header_bg.png"} width="900" height="100" />
             <h1 className="text-lg absolute top-0 w-full text-white font-bold mb-2">
               الحَمدُ لِلَّهِ الَّذي أَنزَلَ عَلى عَبدِهِ الكِتابَ وَلَم يَجعَل
               لَهُ عِوَجًا
             </h1>
             <div className="flex h-24">
-              <img src={"/logo3.png"} className="ml-2" />
-              <img src={"/logo.png"} className="ml-auto mr-2" />
+              <img src={"logo3.png"} className="ml-2" />
+              <img src={"logo.png"} className="ml-auto mr-2" />
             </div>
             <div className="flex justify-center py-10 h-96 absolute top-0 w-full">
-              <img src={"/slide3.jpg"} className="  bg-black" />
+              <img src={"slide3.jpg"} className="  bg-black" />
             </div>
             <div className="absolute top-[343px]">
               <div className="relative">
-                <img src={"/over_slider.png"} className="ml-auto mr-2" />
+                <img src={"over_slider.png"} className="ml-auto mr-2" />
                 <div className="flex justify-center items-center">
                   <h1 className="absolute top-0 text-lg text-[#0d579e] font-bold ">
                     رَبَّنَـا لَا تُؤَاخِذْنَـا إِن نَّسِـينَا أَوْ
@@ -124,7 +120,7 @@ const App = () => {
                           className="relative "
                           >
                         <img
-                          src={"/eggs-white.png"}
+                          src={"eggs-white.png"}
                           width={250}
                           />
                           <div className="absolute -bottom-7 w-full flex justify-center">
@@ -137,7 +133,7 @@ const App = () => {
                           className="relative "
                           >
                         <img
-                          src={"/eggs-red.png"}
+                          src={"eggs-red.png"}
                           width={250}
                           />
                           <div className="absolute -bottom-7 w-full flex justify-center">
@@ -154,7 +150,7 @@ const App = () => {
                           className="relative "
                           >
                         <img
-                          src={"/eggs-balady.png"}
+                          src={"eggs-balady.png"}
                           width={250}
                           />
                           <div className="absolute -bottom-7 w-full flex justify-center">
@@ -165,7 +161,7 @@ const App = () => {
                       </div>
 
                     </div>
-                      <img src={"/footer.png"} width="900" height="100" />
+                      <img src={"footer.png"} width="900" height="100" />
                     
                   </div>
                 </div>
