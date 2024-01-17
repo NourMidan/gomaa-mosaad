@@ -80,9 +80,9 @@ const App = () => {
               <img src={"logo3.png"} className="ml-2" />
               <img src={"logo.png"} className="ml-auto mr-2" />
             </div>
-            {/* <div className="flex justify-center py-10 h-96 absolute top-0 w-full">
-              <img src={"slide3.jpg"} className="  bg-black" />
-            </div> */}
+            <div className="flex justify-center py-10 h-96 absolute top-0 w-full">
+              <img src={"slide3.jpg"}  className=" w-7/12" />
+            </div>
             <div className="absolute top-[343px]">
               <div className="relative">
                 <img src={"over_slider.png"} className="ml-auto mr-2" />
