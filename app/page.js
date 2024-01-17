@@ -7,6 +7,7 @@ const App = () => {
   const [baladyPrice, setBaladyPrice] = useState();
   const [whitePrice, setWhitePrice] = useState();
   const [redPrice, setRedPrice] = useState();
+  const [type , setType  ] = useState('farms')
   const [date, setDate] = useState();
   const handlePasswordSubmit = () => {
     if (password === "your_password") {
@@ -96,7 +97,12 @@ const App = () => {
                       متوسط تداول أسعار مبيعات أمس
                     </h1>
                     <h1 className="text-[#0d579e] font-['arabic'] text-2xl">
-                      لجمله بيض المائده الصحراوي والزراعي
+                       لبيض المائده الصحراوي والزراعي
+                    </h1>
+                    <h1 className="text-[#F59933] font-['arabic'] text-2xl">
+                      {type=== 'farms' ? 'المــــــــــــــزارع' :'الجمـــــــــــــــلة' }
+                        
+                        
                     </h1>
                     <div className="bg-[#F59933] w-12 h-1 ml-auto mr-auto mt-2"></div>
                     <span className="text-[#0D579E] font['arabic'] text-3xl font-bold mt-3">
@@ -161,54 +167,7 @@ const App = () => {
                       </div>
 
                     </div>
-                    <div className=" flex justify-center gap-6 mb-16">
-                  
-                  <div >
-                      <div 
-                        className="relative "
-                        >
-                      <img
-                        src={"eggs-white.png"}
-                        width={250}
-                        />
-                        <div className="absolute -bottom-7 w-full flex justify-center">
-                      <div className="w-24 h-14 rounded-xl border border-[#48A6FF] bg-white font-[arabic] flex  justify-center text-2xl ">{whitePrice || '00.00'}</div>
-                          </div>
-                        </div>
-                    </div>
-                    <div >
-                      <div 
-                        className="relative "
-                        >
-                      <img
-                        src={"eggs-red.png"}
-                        width={250}
-                        />
-                        <div className="absolute -bottom-7 w-full flex justify-center">
-                      <div className="w-24 h-14 rounded-xl border border-[#48A6FF] bg-white font-[arabic] flex  justify-center text-2xl ">{redPrice || '00.00'}</div>
-                          </div>
-                        </div>
-                    </div>
-
-                  
-
-
-                    <div >
-                      <div 
-                        className="relative "
-                        >
-                      <img
-                        src={"eggs-balady.png"}
-                        width={250}
-                        />
-                        <div className="absolute -bottom-7 w-full flex justify-center">
-                      <div className="w-24 h-14 rounded-xl border border-[#48A6FF] bg-white font-[arabic] flex  justify-center text-2xl ">{baladyPrice || '00.00'}</div>
-                          </div>
-                        </div>
-                        
-                    </div>
-
-                  </div>
+    
                       <img src={"footer.png"} width="900" height="100" />
                     
                   </div>
@@ -222,7 +181,10 @@ const App = () => {
         ))}
           
           <div className="fixed bottom-0 flex flex-col w-1/3">
-
+          <select id="mySelect" value={type} onChange={(e) => setType(e.target.value)}>
+          <option value="farms">مزارع</option>
+          <option value="gomla">جملة</option>
+          </select>
           <input
             className="border border-gray-300 rounded px-2 py-1  mb-4"
             type="text"
