@@ -100,11 +100,11 @@ const App = () => {
                     </h1>
                     <div className="bg-[#F59933] w-12 h-1 ml-auto mr-auto mt-2"></div>
                     <span className="text-[#0D579E] font['arabic'] text-3xl font-bold mt-3">
-                      01222206011{" "}
+                      0122220&zwj;6011{" "}
                       <span className="text-[#F59933] font-normal">
                         // {""}
                       </span>
-                      01003731392
+                      01003&zwj;731392
                     </span>
 
                     <div className="flex justify-center mb-5">
