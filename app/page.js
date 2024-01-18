@@ -64,7 +64,7 @@ const App = () => {
         (true && (
           <div
             id="uiContainer"
-            className="text-center w-[900px] h-[1405px]   relative "
+            className="text-center w-[900px] h-[1070px]   relative "
             style={{
               backgroundImage: `url(/slide.jpg)`,
               backgroundSize: "auto 350px",
@@ -180,7 +180,7 @@ const App = () => {
           </div>
         ))}
           
-          <div className="fixed bottom-0 flex flex-col w-1/3">
+          {/* <div className="fixed bottom-0 flex flex-col w-1/3">
           <select id="mySelect" value={type} onChange={(e) => setType(e.target.value)}>
           <option value="farms">مزارع</option>
           <option value="gomla">جملة</option>
@@ -212,7 +212,61 @@ const App = () => {
         >
         Download Image
       </button>
+
+
+        </div> */}
+        
+        <div>
+ 
+
+      {true && (
+        <div className="fixed  bg-black inset-0 overflow-y-auto flex items-center justify-center z-50">
+          <div className=" absolute top-10 left-0 bg-[#F3F4F6] w-96 p-6 rounded shadow-lg">
+          <div className="w-full flex flex-col ">
+
+          <select 
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " id="mySelect"
+           value={type} onChange={(e) => setType(e.target.value)}>
+          <option value="farms">مزارع</option>
+          <option value="gomla">جملة</option>
+          </select>
+          <label for="first_name" className="block mb-2 text-xl  font-[arabic] font-medium ml-auto text-gray-900 ">سعر البيض الآحمر</label>
+
+          <input
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " id="mySelect"
+          type="number"
+            value={redPrice}
+            onChange={(e) => setRedPrice(e.target.value)}
+            />
+          <label for="first_name" className="block mb-2 text-xl font-[arabic] font-medium ml-auto text-gray-900">سعر البيض الآبيض</label>
+
+            <input
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " id="mySelect"
+          type="number"
+            value={whitePrice}
+            onChange={(e) => setWhitePrice(e.target.value)}
+            />
+          <label for="first_name" className="block mb-2 font-[arabic] text-xl font-medium ml-auto text-gray-900">سعر البيض البلدي</label>
+
+            <input
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " id="mySelect"
+          type="number"
+            value={baladyPrice}
+            onChange={(e) => setBaladyPrice(e.target.value)}
+            />
+      <button
+        className="bg-[#F59933] self-center mt-4 text-white w-30 px-4 py-2 rounded-md cursor-pointer  font-[arabic]"
+        onClick={handleDownloadImage}
+        >
+        تحميل 
+      </button>
+
+
         </div>
+          </div>
+        </div>
+      )}
+    </div>
     </div>
   );
 };
